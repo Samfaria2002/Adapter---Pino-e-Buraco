@@ -1,3 +1,5 @@
+package PinosAdapter;
+
 public class PinoRedondo {
     private double raio;
 
@@ -9,6 +11,6 @@ public class PinoRedondo {
     public PinoRedondo(){}
 
     public PinoRedondo(double raio) {
-
+        this.raio = raio;
     }
 }

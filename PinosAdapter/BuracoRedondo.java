@@ -1,3 +1,5 @@
+package PinosAdapter;
+
 public class BuracoRedondo {
     private double raio;
 
@@ -5,13 +7,13 @@ public class BuracoRedondo {
         return raio;
     }
 
-    public BuracoRedondo(double raio) {}
+    public BuracoRedondo(double raio) {
+        this.raio = raio;
+    }
 
-    public void encaixa(PinoRedondo pino) {
-        if (this.raio > pino.getRaio()) {
-            System.out.println("Raio do buraco maior que o do pino");
-        } else {
-            System.out.println("Raio do buraco menor que o do pino");
-        }
+    public boolean encaixa(PinoRedondo pino) {
+        boolean resultado;
+        resultado = (this.getRaio() >= pino.getRaio());
+        return resultado;
     }
 }

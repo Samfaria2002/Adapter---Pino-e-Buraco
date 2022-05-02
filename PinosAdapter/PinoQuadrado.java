@@ -1,3 +1,5 @@
+package PinosAdapter;
+
 public class PinoQuadrado {
     private double largura;
 
@@ -11,6 +13,6 @@ public class PinoQuadrado {
     }
 
     public PinoQuadrado(double largura) {
-
+        this.largura = largura;
     }
 }

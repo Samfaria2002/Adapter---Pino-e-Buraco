@@ -1,15 +1,13 @@
-public class PinoQuadradoAdapter {
+package PinosAdapter;
+
+public class PinoQuadradoAdapter extends PinoRedondo {
     private PinoQuadrado pino;
 
-    public static void main(String[] args) {
-        
-    }
-
-    public double getRaio() {
-        return Math.sqrt(Math.pow(largura / 2, 2) * 2);
+    public double getRaio(PinoQuadrado pinoquad) {
+        return Math.sqrt(Math.pow(pinoquad.getLargura() / 2, 2) * 2);
     }
 
     public PinoQuadradoAdapter(PinoQuadrado pino) {
-
+        this.pino = pino;
     }
 }
